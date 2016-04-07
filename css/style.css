@@ -297,3 +297,13 @@ body{
 }
 
 
+.block{
+	width: 260px;
+	overflow: auto;
+}
+.chernovik{
+	opacity: 0.3;
+
+}
+
+
