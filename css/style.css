@@ -299,11 +299,18 @@ body{
 
 .block{
 	width: 260px;
-	overflow: auto;
-}
-.chernovik{
-	opacity: 0.3;
+	height: 200px;
+	background: repeating-linear-gradient(to top, red,cyan 50px);
+	transform: skewX(30deg);
 
 }
+
+.block:hover{
+	transform: translate(500px, 50px); 
+
+
+}
+
+
 
 
