@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Simple web page</title>
+		<meta charset="UTF-8" http-equiv="Content-Type"; content="text/html">
+		<!--<meta http-equiv="refresh" content="2; URL=http://www.unian.net">-->
+
+		<script></script>
+		<link rel="stylesheet" type='text/css' href="css/normalize.css">
+		<link rel="stylesheet" type='text/css' href="css/style.css">
+		
+	</head>
+	<body>
+		<div class="admin">
+			<div class="adminContent">
+				<form >
+					<fieldset class="discont">						
+							<legend>Дисконт</legend>
+							<input type="text" name="day"></input>
+							<input type="text" name="month"></input>
+							<input type="text" name="year"></input><br/><br/>
+							<input type="button" value="Сохранить"></input>	
+					</fieldset>
+				<form/>
+			</div>
+		
+		</div>
+		<div class="wrapper">
+			<!--start header-->
+			<div class="header">
+				<div class="logo">
+					<a href="#mainblock"><img src="images/logo.png" title="Логотип" alt="Картинка"></a>
+				</div>
+				<div class="menu">
+					<a href="#slider">Слайдер товаров</a>
+					<a href="#catalog">Каталог</a>
+					<a href="#info">О нас</a>
+					<a href="#contact">Контакты</a>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<!--end header-->
+			
+			<!--start mainblock-->
+			<div class="mainblock" id="mainblock">
+				<div class="topic">
+					<p>Lorem ipsum dolor sit amet,<br/> consectetur adipiscing elit.</p><br/><br/>
+					<p>Fusce at enim nisl. Sed gravida<br/> ipsum in interdum posuere.</p>
+				</div>
+				<img src="images/aboutUs_1.png" alt="Тема дня" title="Тема дня">
+				<div class="clearfix"></div>
+			</div>
+			<!--end mainblock-->
+
+			<!--start slider-->
+			<div id="slider" class="slider">
+				<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+				<p>Ut auctor lorem id magna fringilla, congue viverra odio pulvinar. Fusce maximus placerat enim, pellentesque mollis nisl euismod a. Duis in odio et erat congue venenatis. Suspendisse diam tortor, pulvinar nec est vitae, egestas gravida magna. Phasellus blandit fringilla venenatis. Integer est eros, elementum quis augue et, aliquet cursus dui. Quisque auctor ut tellus at vehicula. Donec venenatis sodales lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut suscipit et nisl nec dignissim.</p>
+				<hr/>
+				<span class="leftrow pointer"></span>
+				<span class="rightrow pointer"></span>
+				<div class="slide">
+					<a class="item" href="#">
+						<img src="images/11.jpg" alt="товар"><br/>
+						<span class="item_title">Lorem ipsum</span>
+					</a>
+					<a class="item" href="#">
+						<img src="images/8.jpg" alt="товар"><br/>
+						<span class="item_title">Lorem ipsum</span>
+					</a>
+					<a class="item" href="#">
+						<img src="images/13.jpg" alt="товар"><br/>
+						<span class="item_title">Lorem ipsum</span>
+					</a>
+					<a class="item" href="#">
+						<img src="images/12.jpg" alt="товар"><br/>
+						<span class="item_title">Lorem ipsum</span>
+					</a>
+					<div class="clearfix"></div>
+				</div>
+				<div class="pagination">
+					<span class="item pointer"></span>
+					<span class="item pointer"></span>
+					<span class="item pointer"></span>
+				</div>				
+			</div>
+			<!--end slider-->
+
+			<!--start catalog-->
+			<div class="catalog" id="catalog">
+				<h2 class="center">Catalog</h2>
+				<table>
+					<tr>
+						<td>Беговая дорожка FitLogic ET1403</td>
+						<td><img src="images/1.jpeg" width="60px"></td>
+						<td class="center bold pointer sign">+</td>
+						<td class="center bold pointer sign">-</td>
+					</tr>
+					<tr>
+						<td>Беговая дорожка Spirit XT185</td>
+						<td><img src="images/2.jpeg" width="60px"></td>
+						<td class="center bold pointer sign">+</td>
+						<td class="center bold pointer sign">-</td>
+					</tr><tr>
+						<td>Беговая дорожка USA Style (SS-401)</td>
+						<td><img src="images/3.jpeg" width="60px"></td>
+						<td class="center bold pointer sign">+</td>
+						<td class="center bold pointer sign">-</td>
+					</tr><tr>
+						<td>Беговая дорожка Torneo Smarta (T-205)</td>
+						<td><img src="images/4.jpeg" width="60px"></td>
+						<td class="center bold pointer sign">+</td>
+						<td class="center bold pointer sign">-</td>
+					</tr><tr>
+						<td>Беговая дорожка Jada Fitness JS-5000A</td>
+						<td><img src="images/5.jpeg" width="60px"></td>
+						<td class="center bold pointer sign">+</td>
+						<td class="center bold pointer sign">-</td>
+					</tr><tr>
+						<td>Беговая дорожка USA Style (SS-50 А)</td>
+						<td><img src="images/6.jpg" width="60px"></td>
+						<td class="center bold pointer sign">+</td>
+						<td class="center bold pointer sign">-</td>
+					</tr><tr>
+						<td>Беговая дорожка USA Style (SS-T27)</td>
+						<td><img src="images/7.jpg" width="60px"></td>
+						<td class="center bold pointer sign">+</td>
+						<td class="center bold pointer sign">-</td>
+					</tr><tr>
+						<td>Беговая дорожка Jada Fitness JS-164027</td>
+						<td><img src="images/14.jpeg" width="60px"></td>
+						<td class="center bold pointer sign">+</td>
+						<td class="center bold pointer sign">-</td>
+					</tr><tr>
+						<td>Беговая дорожка Nordic Track T15.0 (NETL14711)</td>
+						<td><img src="images/15.jpeg" width="60px"></td>
+						<td class="center bold pointer sign">+</td>
+						<td class="center bold pointer sign">-</td>
+					</tr><tr>
+						<td>Беговая дорожка USA Style (SS-1365)</td>
+						<td><img src="images/16.jpeg" width="60px"></td>
+						<td class="center bold pointer sign">+</td>
+						<td class="center bold pointer sign">-</td>
+					</tr>
+				</table>
+				<img src="images/3.jpeg" alt="Беговая дорожка" title="Беговая дорожка">
+				<div class="clearfix"></div>
+				<span class="item">1</span>
+				<span class="item">2</span>
+				<span class="item">3</span>
+				<span class="item">4</span>
+				<span class="item">5</span>	
+			</div>
+			<!--end catalog-->
+
+			<!--start info-->
+			<div class="info"  id="info">
+				<h2 class="center">About us</h2>
+				<img src="images/aboutUs_3.png" title="Фото с нами" alt="Фото с нами">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas auctor sodales neque ac bibendum. Praesent ac ligula suscipit, luctus dui non, commodo elit. Donec fringilla augue mollis felis fringilla iaculis. Etiam ac purus sed augue vulputate gravida. Fusce at fermentum neque, id congue elit. Proin eu sem turpis. Curabitur sit amet vestibulum eros. Vestibulum consectetur quam vulputate gravida sagittis. Praesent egestas ligula urna, et imperdiet dolor mollis et. Fusce porta id nunc ac tempor. In lacinia iaculis rutrum. Pellentesque mollis vestibulum nunc, in hendrerit purus. Etiam ac malesuada ipsum. Vestibulum a velit iaculis, tristique orci sed, interdum nunc. Suspendisse potenti. Praesent vel egestas ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas auctor sodales neque ac bibendum. Praesent ac ligula suscipit, luctus dui non, commodo elit. Donec fringilla augue mollis felis fringilla iaculis. Etiam ac purus sed augue vulputate gravida. Fusce at fermentum neque, id congue elit. Proin eu sem turpis. Curabitur sit amet vestibulum eros. Vestibulum consectetur quam vulputate gravida sagittis. Praesent egestas ligula urna, et imperdiet dolor mollis et. Fusce porta id nunc ac tempor. In lacinia iacu.</p>
+				<div class="clearfix"></div>
+			</div>
+			<!--end info-->
+
+			<!--start contact-->
+			<div id="contact" class="contact">
+				<h2>Contacts</h2>
+				<div class="formBlock">
+					<h3>ФОРМА ОБРАТНОЙ СВЯЗИ</h3>
+					<form method="POST" action="form.php">
+						<fieldset>
+							<legend>ЗДЕСЬ ВЫ МОЖЕТЕ ОТПРАВИТЬ НАМ СООБЩЕНИЕ</legend>
+							<label for="name">Ваше имя:&nbsp</label><input id="name" type="text"/><br/><br/>
+							<label for="mail">Ваш e-mail:</label><input id="mail" type="text"/>
+							
+							<fieldset>
+								<legend>ВЫБЕРИТЕ ТЕМУ ДЛЯ ПИСЬМА И НАПИШИТЕ СООБЩЕНИЕ</legend>
+								<div>
+									<label>Тема письма:</label>
+									<select>
+										<optgroup>
+											<option>Тема 1</option>
+											<option>Тема 2</option>
+											<option>Тема 3</option>
+										</optgroup>							
+									</select><br/><br/>
+								</div>
+								<div>
+									<label style="vertical-align: top;">СООБЩЕНИЕ:</label>
+									<textarea cols="50" rows="10" placeholder="Напишите нам"></textarea>
+								</div>
+							</fieldset>
+							<fieldset>
+								<legend>ВВЕДИТЕ КАПЧУ И НАЖМИТЕ ОТПРАВИТЬ</legend>
+								9+8=&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" name="result"/><br/><br/>
+								<input type="submit" value="Отправить">
+								<input type="reset" value="Очистить">
+							</fieldset>
+						</fieldset>					
+					</form>
+				</div>
+				<img src="images/aboutUs_2.png" title="Контакты" alt="Контакты">
+				<div class="clearfix"></div>
+			</div>
+			<!--end contact-->
+
+			<!--start footer-->
+			<div class="footer" id="footer">
+				<div class="column">
+					<p>Здесь представлены ссылки на социальные сети.</p>
+					<a href="http://www.twitter.com">
+						<span class="item twitter"></span>
+					</a>
+					<a href="http://www.facebook.com">
+						<span class="item facebook"></span>
+					</a>
+					<a href="http://www.vk.com">
+						<span class="item vk"></span>
+					</a>
+				</div>
+				<div class="column">
+					<p>
+						Сайт разработан частной компанией. Все права защищены.
+					</p>	
+				</div>
+				<div class="copyright column">
+					<p>Studio DreamDesign.<br/> Copyright 2016</p>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<!--end footer-->			
+			
+		</div>
+	</body>
+</html>
