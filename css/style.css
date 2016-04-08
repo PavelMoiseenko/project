@@ -24,17 +24,21 @@ body{
 	background: #0000FF;
 	left: 0px;
 	z-index: 3;
+	transition: all 1s ease-in;
+	border-radius: 5px;
 }
 .admin:hover{
 	left: 400px;
+
 }
 .adminContent{
 	height: 300px;
 	width: 400px;
-	background: #FF0000;
+	background: #7a7a7a;
 	position: absolute;
 	right: 40px;
 	margin-top: -50px;
+	border-radius: 5px;
 }
 .adminContent input{
 	width: 100px;
@@ -53,9 +57,9 @@ body{
 	position: relative;
 }
 .logo{
-	float: left;
+	padding: 3px 10px;
 	position: absolute;
-	top: 35px;
+	top: 30px;
 	left: 45px;
 	background-color: #7d7d7d;
 	border-radius: 5px;
@@ -68,7 +72,7 @@ body{
 	text-decoration: none;
 	text-transform: uppercase;
 	font-weight: bold;
-	padding: 40px 0 20px 0;
+	padding: 40px 5px 20px 5px;
 	color: #5b5b5b;
 	margin-right: 10px;
 }
