@@ -479,21 +479,53 @@ p {
   outline: 1px solid #ff0000;
 }
 
-/* line 41, ../sass/_mainstyle.scss */
-p {
-  width: 250px;
+/*p {
+	width: widthParagraph(5);
+}*/
+/* line 55, ../sass/_mainstyle.scss */
+h1 {
+  font-family: Arial;
+  font-size: 25px;
+  font-weight: normal;
+  color: #ff0000;
 }
 
-/* line 45, ../sass/_mainstyle.scss */
+/* line 60, ../sass/_mainstyle.scss */
 .cancel, .save {
-  background: rgba(128, 0, 128, 0.7);
+  background: rgba(128, 128, 128, 0.7);
   border: none;
   width: 150px;
   border-radius: 15px;
   padding: 10px 15px;
 }
 
-/* line 54, ../sass/_mainstyle.scss */
+/* line 69, ../sass/_mainstyle.scss */
 .save {
-  background: purple;
+  background: gray;
+}
+
+/* line 82, ../sass/_mainstyle.scss */
+h1 {
+  border-color: blue;
+  border-width: 5px;
+  border-style: dashed;
+}
+
+/* line 86, ../sass/_mainstyle.scss */
+p {
+  border-color: blue;
+  border-width: 10px;
+  border-style: dashed;
+}
+
+/* line 98, ../sass/_mainstyle.scss */
+h1 {
+  color: yellow;
+  background-color: magenta;
+  border-color: cyan;
+}
+
+/* line 110, ../sass/_mainstyle.scss */
+.save, .cancel, .save {
+  background-color: green;
 }

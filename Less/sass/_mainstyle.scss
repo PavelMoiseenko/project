@@ -28,7 +28,7 @@ $save: #0000FF;
 	background-color: $save;
 }*/
 /*$color: mix(#7f8bff, #b32600, 70%);*/
-$color: mix(#FF0000, #0000FF, 50%);
+$color: mix(yellow, blue, 50%);
 $widthP: 50px;
 p{
 	outline: 1px solid #ff0000;
@@ -38,9 +38,24 @@ p{
 	@return $n*$widthP;
 }
 
-p {
+/*p {
 	width: widthParagraph(5);
+}*/
+
+@mixin large-text($size, $weight: normal){
+	font: {
+		family: Arial;
+		size: $size;
+		weight: $weight;
+	}
+	color: #ff0000;
+
 }
+
+h1{
+	@include large-text(25px);
+}
+
 
 .cancel{
 	background: fade-out($color, .3);
@@ -55,3 +70,51 @@ p {
 	@extend .cancel;
 	background: fade-in($color, .7);
 }
+
+@mixin blue-border($color, $width: 10px){
+	border: {
+		color: $color;
+		width: $width;
+		style: dashed;
+	}
+}
+
+h1{
+	@include blue-border(blue, 5px);
+}
+
+p{
+	@include blue-border(blue);
+}
+
+$values: yellow, magenta, cyan;
+
+@mixin colors($text, $background, $border){
+	color: $text;
+	background-color: $background;
+	border-color: $border;
+}
+
+h1{
+	@include colors($values...);
+}
+
+p{
+	@if 2+2==3 or 1+2==2 {
+		border: 5px solid green;
+		background-color: cyan;
+	}
+}
+
+	$type: save;
+	.save, .cancel{
+		@if $type == cancel{
+			background-color: blue;
+		}@else if $type == save{
+			background-color: green;
+		}@else if $type == delete{
+			background-color: red;
+		}@else{
+			background-color: black;
+		}
+	}
