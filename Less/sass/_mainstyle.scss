@@ -1,0 +1,57 @@
+/*$cancel: #FF0000;
+$return: #00FF00;
+$save: #0000FF;
+
+.return{
+	background-color: $return;
+	border: 1px solid black;
+	padding: 5px 10px;
+	border-radius: 7px;
+	display: inline-block;
+	width: 150px;
+	height: 60px;
+	&:hover{
+		background-color: #ffff00;
+		color: #ff0000;
+		font-weight: bold;
+	}
+}
+
+.cancel{
+	@extend .return;
+	background-color: $cancel;
+
+}
+
+.save{
+	@extend .return;
+	background-color: $save;
+}*/
+/*$color: mix(#7f8bff, #b32600, 70%);*/
+$color: mix(#FF0000, #0000FF, 50%);
+$widthP: 50px;
+p{
+	outline: 1px solid #ff0000;
+}
+
+@function widthParagraph($n){
+	@return $n*$widthP;
+}
+
+p {
+	width: widthParagraph(5);
+}
+
+.cancel{
+	background: fade-out($color, .3);
+	border: none;
+	width: 150px;
+	border-radius: 15px;
+	padding: 10px 15px;
+
+}
+
+.save{
+	@extend .cancel;
+	background: fade-in($color, .7);
+}
