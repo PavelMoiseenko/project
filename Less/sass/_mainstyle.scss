@@ -118,3 +118,42 @@ p{
 			background-color: black;
 		}
 	}
+
+
+@for $i from 1 through 3{
+	.item-#{$i}{
+		width: 100px*$i;
+	}
+}
+
+$i: 6;
+
+table td{
+	border: 1px solid blue;
+}
+
+@while $i>0 {
+	.item-#{$i}{
+		width: 2em*$i;
+	}
+	$i: $i - 2;
+}
+
+@each $week in monday, tuesday, wednday, thursday{
+	.#{$week}-icon {
+		background-image: url('/images/#{$week}.png');
+	}
+}
+
+
+$i: 0;
+@each $sprite in gray, yellow, red, blue{
+	.#{$sprite}-icon{
+		background: url('../images/sprite.png') #{$i}px 0px no-repeat;
+		display: inline-block;
+		width: 16px;
+		height: 16px;
+	}
+	$i: $i - 16;
+}
+

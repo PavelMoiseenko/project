@@ -529,3 +529,90 @@ h1 {
 .save, .cancel, .save {
   background-color: green;
 }
+
+/* line 124, ../sass/_mainstyle.scss */
+.item-1 {
+  width: 100px;
+}
+
+/* line 124, ../sass/_mainstyle.scss */
+.item-2 {
+  width: 200px;
+}
+
+/* line 124, ../sass/_mainstyle.scss */
+.item-3 {
+  width: 300px;
+}
+
+/* line 131, ../sass/_mainstyle.scss */
+table td {
+  border: 1px solid blue;
+}
+
+/* line 136, ../sass/_mainstyle.scss */
+.item-6 {
+  width: 12em;
+}
+
+/* line 136, ../sass/_mainstyle.scss */
+.item-4 {
+  width: 8em;
+}
+
+/* line 136, ../sass/_mainstyle.scss */
+.item-2 {
+  width: 4em;
+}
+
+/* line 143, ../sass/_mainstyle.scss */
+.monday-icon {
+  background-image: url("/images/monday.png");
+}
+
+/* line 143, ../sass/_mainstyle.scss */
+.tuesday-icon {
+  background-image: url("/images/tuesday.png");
+}
+
+/* line 143, ../sass/_mainstyle.scss */
+.wednday-icon {
+  background-image: url("/images/wednday.png");
+}
+
+/* line 143, ../sass/_mainstyle.scss */
+.thursday-icon {
+  background-image: url("/images/thursday.png");
+}
+
+/* line 151, ../sass/_mainstyle.scss */
+.gray-icon {
+  background: url("../images/sprite.png") 0px 0px no-repeat;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+
+/* line 151, ../sass/_mainstyle.scss */
+.yellow-icon {
+  background: url("../images/sprite.png") -16px 0px no-repeat;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+
+/* line 151, ../sass/_mainstyle.scss */
+.red-icon {
+  background: url("../images/sprite.png") -32px 0px no-repeat;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+
+/* line 151, ../sass/_mainstyle.scss */
+.blue-icon {
+  background: url("../images/sprite.png") -48px 0px no-repeat;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
