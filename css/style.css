@@ -15,6 +15,10 @@ body{
 	margin: 0 auto;
 }
 
+.block{
+	padding: 25px 20px;
+}
+
 
 /*start adminpanel*/
 .admin{
@@ -61,7 +65,7 @@ body{
 .logo{
 	padding: 3px 10px;
 	position: absolute;
-	top: 30px;
+	top: 5px;
 	left: 45px;
 	background-color: #7d7d7d;
 	border-radius: 5px;
@@ -74,7 +78,7 @@ body{
 	text-decoration: none;
 	text-transform: uppercase;
 	font-weight: bold;
-	padding: 40px 5px 20px 5px;
+	padding: 20px 5px 20px 5px;
 	color: #5b5b5b;
 	margin-right: 10px;
 }
@@ -86,7 +90,6 @@ body{
 /*start mainblock*/
 .mainblock{
 	background-color: #363636;
-	padding: 40px 45px 40px 40px;
 }
 .topic{
 	float: left;
@@ -109,7 +112,6 @@ body{
 	position: relative;
 	padding-top: 20px;
 	background-color: #f3f3f3;
-	padding: 15px 25px 15px 25px;
 	z-index: 1;
 }
 .slider h4{
@@ -117,6 +119,7 @@ body{
 	text-transform: uppercase;
 	font-weight: bold;
 	color: #7c7c7c;
+	padding-bottom: 10px;
 }
 .slider p{
 	color: #7c7c7c;
@@ -126,7 +129,7 @@ body{
 	display: inline-block;
 	width: 31px;
 	height: 23px;
-	top: 190px;
+	top: 200px;
 	position: absolute;
 }
 .leftrow{
@@ -175,7 +178,6 @@ body{
 /*start catalog*/
 .catalog{
 	background-color: #363636;
-	padding: 5px 5px 20px;
 }
 .catalog h2{
 	color: #f4f4f4;
@@ -184,6 +186,7 @@ body{
 .catalog td{
 	color: #ffffff;
 	background-color: #4b4b4b;
+	padding: 5px;
 }
 .catalog td:hover{
 	color: #363636;
@@ -202,6 +205,7 @@ body{
 .catalog table+img{
 	float: right;
 	width:240px;
+	margin-top: 27px;
 }
 .catalog .item{
 	display: inline-block;
@@ -218,13 +222,38 @@ body{
 /*start info*/
 .info{
 	background-color: #f2f2f2;
-	padding: 10px 5px;
 }
-.info img{
+
+
+
+.fotoUs1{
 	width: 150px;
 	float: left;
+	margin-right: 5px;
 }
 .info p{
+	text-align: justify;
+	
+}
+
+.fotoUs{
+	position: relative;
+	float: right;
+	margin-left: 5px;
+}
+
+.fotoUs>img{
+	width: 220px;
+	cursor: pointer;
+}
+
+.img1, .img2, .img3{
+	width: 70px;
+	height: 70px;
+	cursor: pointer;
+}
+
+.fotoUs+p{
 	text-align: justify;
 }
 /*end info*/
@@ -233,7 +262,6 @@ body{
 .contact{
 	background-color: #363636;
 	color: #f2f2f2;
-	padding: 10px 5px;
 }
 .contact h2{
 	text-align: center;
@@ -243,10 +271,11 @@ body{
 	width: 300px;
 }
 .contact img{
-	width: 270px;
+	width: 250px;
 	float: right;
 	margin-top: 160px;
 }
+
 /*end contact*/
 
 /*start footer*/
@@ -257,9 +286,14 @@ body{
 .footer p{
 	color: #757575;
 }
-.column{
+.footer a{
+	text-decoration: none;
+}
+.networks{
 	float: left;
-	width: 240px;
+}
+.anchors{
+	float: right;
 	margin-right: 6px;
 }
 .copyright{
@@ -299,8 +333,8 @@ body{
 	width: 15px;
 	height: 30px;
 	border-radius: 10px;
-	border-top-color: grey;
-	border-left-color: grey; 
+	border-top-color: #ccc;
+	border-left-color: #ccc; 
 	box-shadow:  inset 0px 0px 10px 0px;
 }
 
@@ -350,13 +384,13 @@ body{
 }
 /*end pop-Up*/
 .twitter{
-	background: url("../images/sprite1.png") 0 -155px no-repeat;
+	background: url("../images/sprite1.png") 0 -153px no-repeat;
 }
 .facebook{
-	background: url("../images/sprite1.png") -76px -155px no-repeat;
+	background: url("../images/sprite1.png") -76px -153px no-repeat;
 }
 .vk{
-	background: url("../images/sprite1.png") -228px -155px no-repeat;
+	background: url("../images/sprite1.png") -228px -153px no-repeat;
 }
 .twitter:hover{
 	background: url("../images/sprite1.png") 0 -76px no-repeat;
