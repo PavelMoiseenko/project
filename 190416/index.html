@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Selectors</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <style>
+      span[lang]{
+        font-weight: bold;
+      }
+      span[lang="pt"]{
+        color: #00FF00;
+      }
+      span[lang~="df"]{
+        color: #FF0000;
+      }
+      span[lang|="zh"]{
+        color: magenta;
+      }
+      a[href^="http"]{
+        color: red;
+      }
+      a[href$=".cn"]{
+        color: grey;
+      }
+      a[href*="ple"]{
+        color: cyan;
+      }
+      .box1{
+        width: 50px;
+        height: 60px;
+        padding: 10px;
+        border: 5px solid black;
+        background-color: blue;
+      }
+      .box2{
+        display: inline-block;
+        width: 50px;
+        height: 60px;
+        padding: 10px;
+        border: 5px solid black;
+        box-sizing: border-box;
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="hello-example">
+      <a href="http://example.com">English:</a>
+      <span lang="en-us en-gb en-au en-nz df">Hello World!</span>
+    </div>
+    <div class="hello-example">
+      <a href="#portuguese">Portuguese:</a>
+      <span lang="pt">Olá Mnd!</span>
+    </div>
+    <div class="hello-example">
+      <a href="http://example.cn">Chinese (Simplified):</a>
+      <span lang="zh-CN">世界您好！</span>
+    </div>
+    <div class="hello-example">
+      <a href="http://example.cn">Chinese (Traditional):</a>
+      <span lang="zh-TW">世界您好！</span>
+    </div>
+    
+  </body>
+</html>
+

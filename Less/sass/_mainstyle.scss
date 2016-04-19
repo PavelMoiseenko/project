@@ -157,3 +157,47 @@ $i: 0;
 	$i: $i - 16;
 }
 
+$base-columns-amount: 16;
+@for $i from 1 through $base-columns-amount{
+	$minimum-column-width: 100%/$i;
+	.grd-fill-column#{$i}{
+		width: $minimum-column-width;
+		/*height: 50px;*/
+		border: 1px solid black;
+		background-color: yellow;
+
+	}
+}
+
+@for $i from 1 through $base-columns-amount{
+	$minimum-column-width: 100%/$base-columns-amount;
+	.grd-step-column#{$i}{
+		width: $minimum-column-width*$i;
+		/*height: 50px;*/
+		background-color: cyan;
+		outline: 1px solid black;
+
+	}
+}
+
+/*.grd-step-column5, .grd-step-column6{
+	display: inline-block;
+	font-size: 14px;
+	padding: 0 5px;
+	vertical-align: top;
+}*/
+.grd-row{
+	font-size: 0;
+	div[class*="grd-step-column"]{
+		display: inline-block;
+		font-size: 14px;
+		padding: 0 5px;
+		vertical-align: top;
+		box-sizing: border-box;
+
+	}
+}
+
+.heading{
+	text-align: center;
+}

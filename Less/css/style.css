@@ -616,3 +616,283 @@ table td {
   width: 16px;
   height: 16px;
 }
+
+/* line 163, ../sass/_mainstyle.scss */
+.grd-fill-column1 {
+  width: 100%;
+  /*height: 50px;*/
+  border: 1px solid black;
+  background-color: yellow;
+}
+
+/* line 163, ../sass/_mainstyle.scss */
+.grd-fill-column2 {
+  width: 50%;
+  /*height: 50px;*/
+  border: 1px solid black;
+  background-color: yellow;
+}
+
+/* line 163, ../sass/_mainstyle.scss */
+.grd-fill-column3 {
+  width: 33.33333%;
+  /*height: 50px;*/
+  border: 1px solid black;
+  background-color: yellow;
+}
+
+/* line 163, ../sass/_mainstyle.scss */
+.grd-fill-column4 {
+  width: 25%;
+  /*height: 50px;*/
+  border: 1px solid black;
+  background-color: yellow;
+}
+
+/* line 163, ../sass/_mainstyle.scss */
+.grd-fill-column5 {
+  width: 20%;
+  /*height: 50px;*/
+  border: 1px solid black;
+  background-color: yellow;
+}
+
+/* line 163, ../sass/_mainstyle.scss */
+.grd-fill-column6 {
+  width: 16.66667%;
+  /*height: 50px;*/
+  border: 1px solid black;
+  background-color: yellow;
+}
+
+/* line 163, ../sass/_mainstyle.scss */
+.grd-fill-column7 {
+  width: 14.28571%;
+  /*height: 50px;*/
+  border: 1px solid black;
+  background-color: yellow;
+}
+
+/* line 163, ../sass/_mainstyle.scss */
+.grd-fill-column8 {
+  width: 12.5%;
+  /*height: 50px;*/
+  border: 1px solid black;
+  background-color: yellow;
+}
+
+/* line 163, ../sass/_mainstyle.scss */
+.grd-fill-column9 {
+  width: 11.11111%;
+  /*height: 50px;*/
+  border: 1px solid black;
+  background-color: yellow;
+}
+
+/* line 163, ../sass/_mainstyle.scss */
+.grd-fill-column10 {
+  width: 10%;
+  /*height: 50px;*/
+  border: 1px solid black;
+  background-color: yellow;
+}
+
+/* line 163, ../sass/_mainstyle.scss */
+.grd-fill-column11 {
+  width: 9.09091%;
+  /*height: 50px;*/
+  border: 1px solid black;
+  background-color: yellow;
+}
+
+/* line 163, ../sass/_mainstyle.scss */
+.grd-fill-column12 {
+  width: 8.33333%;
+  /*height: 50px;*/
+  border: 1px solid black;
+  background-color: yellow;
+}
+
+/* line 163, ../sass/_mainstyle.scss */
+.grd-fill-column13 {
+  width: 7.69231%;
+  /*height: 50px;*/
+  border: 1px solid black;
+  background-color: yellow;
+}
+
+/* line 163, ../sass/_mainstyle.scss */
+.grd-fill-column14 {
+  width: 7.14286%;
+  /*height: 50px;*/
+  border: 1px solid black;
+  background-color: yellow;
+}
+
+/* line 163, ../sass/_mainstyle.scss */
+.grd-fill-column15 {
+  width: 6.66667%;
+  /*height: 50px;*/
+  border: 1px solid black;
+  background-color: yellow;
+}
+
+/* line 163, ../sass/_mainstyle.scss */
+.grd-fill-column16 {
+  width: 6.25%;
+  /*height: 50px;*/
+  border: 1px solid black;
+  background-color: yellow;
+}
+
+/* line 174, ../sass/_mainstyle.scss */
+.grd-step-column1 {
+  width: 6.25%;
+  /*height: 50px;*/
+  background-color: cyan;
+  outline: 1px solid black;
+}
+
+/* line 174, ../sass/_mainstyle.scss */
+.grd-step-column2 {
+  width: 12.5%;
+  /*height: 50px;*/
+  background-color: cyan;
+  outline: 1px solid black;
+}
+
+/* line 174, ../sass/_mainstyle.scss */
+.grd-step-column3 {
+  width: 18.75%;
+  /*height: 50px;*/
+  background-color: cyan;
+  outline: 1px solid black;
+}
+
+/* line 174, ../sass/_mainstyle.scss */
+.grd-step-column4 {
+  width: 25%;
+  /*height: 50px;*/
+  background-color: cyan;
+  outline: 1px solid black;
+}
+
+/* line 174, ../sass/_mainstyle.scss */
+.grd-step-column5 {
+  width: 31.25%;
+  /*height: 50px;*/
+  background-color: cyan;
+  outline: 1px solid black;
+}
+
+/* line 174, ../sass/_mainstyle.scss */
+.grd-step-column6 {
+  width: 37.5%;
+  /*height: 50px;*/
+  background-color: cyan;
+  outline: 1px solid black;
+}
+
+/* line 174, ../sass/_mainstyle.scss */
+.grd-step-column7 {
+  width: 43.75%;
+  /*height: 50px;*/
+  background-color: cyan;
+  outline: 1px solid black;
+}
+
+/* line 174, ../sass/_mainstyle.scss */
+.grd-step-column8 {
+  width: 50%;
+  /*height: 50px;*/
+  background-color: cyan;
+  outline: 1px solid black;
+}
+
+/* line 174, ../sass/_mainstyle.scss */
+.grd-step-column9 {
+  width: 56.25%;
+  /*height: 50px;*/
+  background-color: cyan;
+  outline: 1px solid black;
+}
+
+/* line 174, ../sass/_mainstyle.scss */
+.grd-step-column10 {
+  width: 62.5%;
+  /*height: 50px;*/
+  background-color: cyan;
+  outline: 1px solid black;
+}
+
+/* line 174, ../sass/_mainstyle.scss */
+.grd-step-column11 {
+  width: 68.75%;
+  /*height: 50px;*/
+  background-color: cyan;
+  outline: 1px solid black;
+}
+
+/* line 174, ../sass/_mainstyle.scss */
+.grd-step-column12 {
+  width: 75%;
+  /*height: 50px;*/
+  background-color: cyan;
+  outline: 1px solid black;
+}
+
+/* line 174, ../sass/_mainstyle.scss */
+.grd-step-column13 {
+  width: 81.25%;
+  /*height: 50px;*/
+  background-color: cyan;
+  outline: 1px solid black;
+}
+
+/* line 174, ../sass/_mainstyle.scss */
+.grd-step-column14 {
+  width: 87.5%;
+  /*height: 50px;*/
+  background-color: cyan;
+  outline: 1px solid black;
+}
+
+/* line 174, ../sass/_mainstyle.scss */
+.grd-step-column15 {
+  width: 93.75%;
+  /*height: 50px;*/
+  background-color: cyan;
+  outline: 1px solid black;
+}
+
+/* line 174, ../sass/_mainstyle.scss */
+.grd-step-column16 {
+  width: 100%;
+  /*height: 50px;*/
+  background-color: cyan;
+  outline: 1px solid black;
+}
+
+/*.grd-step-column5, .grd-step-column6{
+	display: inline-block;
+	font-size: 14px;
+	padding: 0 5px;
+	vertical-align: top;
+}*/
+/* line 189, ../sass/_mainstyle.scss */
+.grd-row {
+  font-size: 0;
+}
+/* line 191, ../sass/_mainstyle.scss */
+.grd-row div[class*="grd-step-column"] {
+  display: inline-block;
+  font-size: 14px;
+  padding: 0 5px;
+  vertical-align: top;
+  box-sizing: border-box;
+}
+
+/* line 201, ../sass/_mainstyle.scss */
+.heading {
+  text-align: center;
+}
