@@ -9,32 +9,38 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
     //Event listener on change
     function onChangeListener(e) {
-        switch (inputUnit.value) {
-            case "inch":
-                outputValue.value = inchToCm(inputValue.value) + " cm";
-                break;
-            case "centimeter":
-                $('#modalForCm').modal('show');
-                const buttonCmToInch = document.getElementById('cm-to-inch');
-                const buttonCmToFoot = document.getElementById('cm-to-foot');
-                buttonCmToInch.addEventListener('click', onClickListenerCmInch);
-                buttonCmToFoot.addEventListener('click', onClickListenerCmFoot);
-                break;
-            case "foot":
-                outputValue.value = footToCm(inputValue.value) + " cm";
-                break;
-            case "yard":
-                outputValue.value = yardToMeter(inputValue.value) + " m";
-                break;
-            case "meter":
-                outputValue.value = meterToYard(inputValue.value) + " yard";
-                break;
-            case "kilometer":
-                outputValue.value = kmToMile(inputValue.value) + " mile";
-                break;
-            case "mile":
-                outputValue.value = mileToKm(inputValue.value) + " km";
-                break;
+
+        if (validate(inputValue)) {
+            switch (inputUnit.value) {
+                case "inch":
+                    outputValue.value = inchToCm(inputValue.value) + " cm";
+                    break;
+                case "centimeter":
+                    outputValue.value = '';
+                    $('#modalForCm').modal('show');
+                    const buttonCmToInch = document.getElementById('cm-to-inch');
+                    const buttonCmToFoot = document.getElementById('cm-to-foot');
+                    buttonCmToInch.addEventListener('click', onClickListenerCmInch);
+                    buttonCmToFoot.addEventListener('click', onClickListenerCmFoot);
+                    break;
+                case "foot":
+                    outputValue.value = footToCm(inputValue.value) + " cm";
+                    break;
+                case "yard":
+                    outputValue.value = yardToMeter(inputValue.value) + " m";
+                    break;
+                case "meter":
+                    outputValue.value = meterToYard(inputValue.value) + " yard";
+                    break;
+                case "kilometer":
+                    outputValue.value = kmToMile(inputValue.value) + " mile";
+                    break;
+                case "mile":
+                    outputValue.value = mileToKm(inputValue.value) + " km";
+                    break;
+                default:
+                    outputValue.value = '';
+            }
         }
     }
 
@@ -86,6 +92,36 @@ document.addEventListener("DOMContentLoaded", function (event) {
     //Convert cm to feet when "Cm to feet" button is clicked
     function onClickListenerCmFoot() {
         outputValue.value = cmToFeet(inputValue.value) + " foot";
+    }
+
+    function validate(inputField) {
+        let error = false;
+
+        //Validate empty field
+        const warningForEmpty = document.getElementById('warning-empty');
+
+        if (inputField.value === '') {
+            inputField.classList.add('error');
+            warningForEmpty.classList.remove('hide');
+            return error;
+        } else {
+            inputField.classList.remove('error');
+            warningForEmpty.classList.add('hide');
+        }
+
+        //Validate number type
+        const warningForNumber = document.getElementById('warning-number');
+
+        if (isNaN(parseFloat(inputField.value))) {
+            inputField.classList.add('error');
+            warningForNumber.classList.remove('hide');
+            return error;
+        } else {
+            inputField.classList.remove('error');
+            warningForNumber.classList.add('hide');
+        }
+
+        return !error;
     }
 
 });

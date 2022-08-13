@@ -14,3 +14,11 @@
 .modal-footer{
     justify-content: space-around;
 }
+
+.error{
+    border: 2px solid #ff0000;
+}
+
+.hide{
+    display: none;
+}
