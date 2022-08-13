@@ -96,29 +96,25 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
     function validate(inputField) {
         let error = false;
+        const warningForEmpty = document.getElementById('warning-empty');
+        const warningForNumber = document.getElementById('warning-number');
+
+        inputField.classList.remove('error');
+        warningForEmpty.classList.add('hide');
+        warningForNumber.classList.add('hide');
 
         //Validate empty field
-        const warningForEmpty = document.getElementById('warning-empty');
-
         if (inputField.value === '') {
             inputField.classList.add('error');
             warningForEmpty.classList.remove('hide');
             return error;
-        } else {
-            inputField.classList.remove('error');
-            warningForEmpty.classList.add('hide');
         }
 
         //Validate number type
-        const warningForNumber = document.getElementById('warning-number');
-
         if (isNaN(parseFloat(inputField.value))) {
             inputField.classList.add('error');
             warningForNumber.classList.remove('hide');
             return error;
-        } else {
-            inputField.classList.remove('error');
-            warningForNumber.classList.add('hide');
         }
 
         return !error;
